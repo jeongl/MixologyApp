@@ -1,0 +1,231 @@
+$red:#9F1501;
+ $lightCoffee:#D29C77;
+ $rustRed:#cc6600;
+ $darkRed:#6C0F00; //#590902; //6C1C12
+$lightRed:#520B00;
+ $white:#FFFAF6; //#F3E0D2
+$coffee:#9F460B;
+ $main-font-color:$darkRed;
+ $question-font-color:$darkRed;
+ $off-white:#FFEFC3; //#FFEFB7; //#FFEFDB;
+$off-white-hover:#D9CFBE;
+ $match-white:#F0EBDE;
+ body,
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    background-image: url(../assets/images/sativa.png);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    color: $main-font-color;
+    font-size: 2em;
+    line-height: 1.3em;
+    ul li {
+        list-style: none;
+    }
+    form {
+        margin: 1rem 0 1rem;
+    }
+}
+#content {
+  height: 100%;
+  background-color: rgba($off-white, .3);
+}
+.page {
+    height: 100%;
+}
+h1,
+h2,
+h3,
+label {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    color: $main-font-color;
+}
+input {
+    border-radius: 0.3em;
+}
+//Navbar styling
+.tab-bar {
+    background-color: $darkRed;
+    #logo {
+        height: 1.8em;
+        padding: 0.2em;
+    }
+}
+
+#loggedInName {
+  font-weight: 200;
+  color: $white;
+}
+// Side-bar menu
+.left-off-canvas-menu {
+    background-color: $match-white;
+}
+ul.off-canvas-list li a {
+    color: $main-font-color;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+ul.off-canvas-list li a:hover {
+    background-color: $off-white-hover;
+}
+.off-canvas-wrap,
+.inner-wrap {
+    height: 100%;
+}
+ul.off-canvas-list li a {
+    border-bottom: 2px solid $darkRed;
+    padding: 7px;
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+.tab-bar .menu-icon span {
+    -webkit-box-shadow: 1px 0px 1px 1px $white, 1px 7px 1px 1px $white, 1px 14px 1px 1px $white;
+    box-shadow: 0 0px 0 1px $white, 0 7px 0 1px $white, 0 14px 0 1px $white;
+}
+.move-right .exit-off-canvas {
+    box-shadow: -2px 0 2px rgba($darkRed, 0.5), 2px 0 2px rgba($darkRed, 0.5);
+    background: rgba($white, 0.5);
+}
+@media (min-width: 40.063em) {
+    .tab-bar-section {
+        text-align: center;
+    }
+}
+.left-small {
+    border: none;
+}
+//Login styling
+a.sub-line {
+    font-size: 0.5em;
+    color: $darkRed;
+    padding: 0;
+    height: 16px;
+}
+input#passwordInput {
+    margin-bottom: 0;
+}
+
+button#create-account{
+        margin-top: 1em;
+    }
+.loginForm h1 {
+    text-align: center;
+}
+.loginForm {
+    input {
+        background-color: $match-white;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid $darkRed;
+        box-shadow: none;
+        color: $darkRed;
+        padding: 0;
+        margin: 0;
+        height: 3em;
+    }
+}
+#createAccount {
+    text-align: center;
+    a {
+        color: $darkRed;
+        font-size: 0.8em;
+    }
+}
+//Question styling
+.question {
+    text-align: center;
+    color: $main-font-color;
+    padding: 1em;
+    font-weight: 250;
+}
+button {
+    border-radius: .2em;
+    border: 2px solid $darkRed;
+    background-color: $match-white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.7em;
+    color: $question-font-color;
+    font-weight: 100;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+button:hover {
+    border: 2px solid $darkRed;
+    background-color: $off-white-hover;
+    color: $question-font-color;
+}
+button:focus {
+    border: 2px solid $darkRed;
+    background-color: $off-white-hover;
+    color: $question-font-color;
+}
+//Recipe Page Styling
+.cocktailRecipeItem {
+    border: 2px solid $darkRed;
+    border-radius: .2em;
+    color: $darkRed;
+    background-color: $match-white;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+.cocktailTitle {
+    padding-top: 1em;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: $darkRed;
+    text-transform: uppercase;
+}
+.titleRecipe {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $darkRed;
+}
+.recipeButton {
+    display: inline-block;
+    font-size: 0.5em;
+    border: 2px solid $darkRed;
+    margin: 0.2em 0.2em 0.5em 0.2em;
+    background-color: $darkRed;
+    color: $white;
+    text-transform: uppercase;
+}
+.recipeButton:hover {
+    background-color: $lightRed;
+    border: 2px solid $lightRed;
+    color: $white;
+}
+.recipeButton:focus {
+    background-color: $lightRed;
+    border: 2px solid $lightRed;
+    color: $white;
+}
+.recipeButton[disabled] {
+    background-color: $darkRed;
+    border: 2px solid $darkRed;
+    color: $white;
+}
+.recipeButton[disabled]:hover {
+    background-color: $darkRed;
+    border: 2px solid $darkRed;
+    color: $white;
+}
+
+.recipeButton[disabled]:focus {
+    background-color: $darkRed;
+    border: 2px solid $darkRed;
+    color: $white;
+}
+.fb-share-button {
+   margin-top: -10px;   
+}
+
+.fb_iframe_widget {
+    vertical-align: top;
+    padding-top: 5px;
+    padding-left: 5px;
+}
